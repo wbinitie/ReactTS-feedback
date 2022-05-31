@@ -5,6 +5,7 @@ export interface Item {
 }
 export type FeedbackContextType = {
   feedback: Item[];
+  isLoading: boolean;
   handleDelete: (id: number | string) => void;
   addFeedback: (item: Item) => void;
   editFeedback: (item: Item) => void;
